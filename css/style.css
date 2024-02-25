@@ -1,0 +1,121 @@
+p,
+li {
+  color: #fff;
+  font-size: xx-large;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  font-size: xx-large;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: black;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+ul,
+ol {
+  list-style: none;
+  display: inline;
+}
+
+header {
+  color: #fff;
+  display: inline;
+  align-items: center;
+}
+
+li {
+  display: inline-block;
+}
+
+.OptimaLogo {
+  margin-right: 10%;
+}
+
+h1 {
+  margin-top: 200px;
+  margin-bottom: 500px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-button {
+  background-color: #191919;
+  color: rgb(255, 255, 255);
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #515151;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: rgb(255, 255, 255);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #7b7b7b;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+li:not(:last-child) {
+  margin-right: 50px;
+}
+
+ul {
+  margin-left: 90px;
+  align-items: center;
+  align-items: center;
+}
+
+header {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 16px 0px;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.headerList {
+  display: flex;
+}
+
+* {
+  font-family: "Karla", sans-serif;
+}
+
+.OptimaLogo {
+  padding-right: 100px;
+}
+
+@media (max-width: 1199px) {
+  .headerList, .langCall {
+    display: none;
+  }
+}
