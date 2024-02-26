@@ -14,7 +14,7 @@ a {
 
 html {
   background: black;
-//   background-image: url("../../images/header/background/cars-bakckground-computer.png");
+  //   background-image: url("../../images/header/background/cars-bakckground-computer.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
@@ -86,7 +86,7 @@ li:not(:last-child) {
 ul {
   margin-left: 90px;
   align-items: center;
-align-items: center;
+  align-items: center;
 }
 header {
   height: 100%;
@@ -96,19 +96,51 @@ header {
   justify-content: space-between;
   margin: 0;
 }
-.headerList{
-    display: flex;
+.headerList {
+  display: flex;
 }
-*{
-    font-family: "Karla", sans-serif;
+* {
+  font-family: "Karla", sans-serif;
 }
-.OptimaLogo{
-    padding-right: 100px;
+.OptimaLogo {
+  padding-right: 100px;
 }
 // adaptation
 
-@media (max-width: 1199px){
-    .headerList,.langCall{
-        display: none;
-    }
+@media (max-width: 1199px) {
+  .headerList,
+  .langCall {
+    display: none;
+  }
+}
+
+.adaptatedHeader {
+  @media (min-width: 1200px) {
+    display: none;
+  }
+  @media (max-width: 1199px) {
+    display: flex;
+  }
+  @media (max-width: 700px) {
+    display: flex;
+  }
+  @media (max-width: 360px) {
+    display: flex;
+  }
+}
+
+// ipad air
+@media (max-width: 1199px) {
+  .adaptatedHeader {
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .OptimaLogo{
+    padding: 0;
+    margin: 0;
+  }
+}
+.butgerBtn{
+  background: #ffffff00;
 }
