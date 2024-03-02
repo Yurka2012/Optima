@@ -1,0 +1,29 @@
+.qContainer {
+  width: 50%;
+}
+.open {
+  margin-left: 100px;
+}
+span {
+  display: inline;
+  color: black;
+}
+h6 {
+  display: inline;
+}
+h5 {
+  margin-top: 40px;
+}
+.questions {
+  background-image: url("../images/question/bg/bg.png");
+  background-size: 100%;
+}
+@media (max-width: 1000px) {
+  .questions {
+    background: white;
+    background-size: 100%;
+  }
+  .open {
+    margin-left: 20px;
+  }
+}

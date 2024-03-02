@@ -1,0 +1,32 @@
+.geo {
+  background: url("../images/geo/bg/bg.png");
+  // text-align: center;
+  background-position: 100%;
+  background-repeat: no-repeat;
+  padding-left: 100px;
+}
+@media (max-width: 800px) {
+  .geop {
+    font-size: 10px;
+  }
+  .geo{
+  padding-left: 10px;
+  }
+  .geoh{
+    font-size: 15px;
+  }
+  .geo{
+    padding: 0;
+  }
+}
+@media (max-width: 360px) {
+    .geo {
+            background: url("../images/geo/bg/bg.png");
+            // text-align: center;
+            background-position: 100%;
+            background-size: 85%;
+
+            background-repeat: no-repeat;
+            padding-left: 0px;
+        }
+}

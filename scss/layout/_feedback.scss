@@ -1,0 +1,14 @@
+.feedbackListItem {
+  width: 29%;
+  // display: flex;
+  // flex-direction: column;
+}
+@media (max-width: 1199px) {
+  .feedbackListItem {
+    width: 25%;
+  }
+  .feedback{
+    display: none;
+  }
+}
+

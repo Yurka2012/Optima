@@ -1,0 +1,49 @@
+.whyUs {
+  margin-top: 105px;
+  text-align: center;
+}
+.whyUs h2 {
+  font-size: 50px;
+}
+.WhyUsListItem {
+  text-align: left;
+}
+.whyUsList {
+  background: #ffaa43;
+  background: linear-gradient(
+    0deg,
+    #ffaa43 43%,
+    #ffaa43 55%,
+    rgba(255, 255, 255, 1) 56%,
+    rgba(255, 255, 255, 1) 77%
+  );
+}
+@media (max-width: 1199px) {
+  .WhyUsListItem img {
+    width: 50%;
+  }
+  .WhyUsListItem h2 {
+    font-size: 10px;
+  }
+  .WhyUsListItem {
+    margin: 0;
+  }
+}
+@media (max-width: 500px) {
+  .whyUsList {
+    background: #fff;
+  }
+  .whyUsList {
+    flex-direction: column;
+  }
+  .WhyUsListItem {
+    background: #ffaa43;
+    background: linear-gradient(
+      0deg,
+      #ffaa43 43%,
+      #ffaa43 65%,
+      rgba(255, 255, 255, 1) 66%,
+      rgba(255, 255, 255, 1) 77%
+    );
+  }
+}

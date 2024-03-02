@@ -1,146 +1,120 @@
-p,
-li {
-  color: #fff;
-  font-size: xx-large;
-}
-a {
+header p,
+header a,
+header li,
+span {
+  color: $baseTextColor;
   text-decoration: none;
-  color: #fff;
-  font-size: xx-large;
 }
-* {
-  box-sizing: border-box;
-}
-
-html {
-  background: black;
-  //   background-image: url("../../images/header/background/cars-bakckground-computer.png");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-}
-
-ul,
-ol {
-  list-style: none;
-  display: inline;
-}
-
 header {
-  color: #fff;
-  display: inline;
-  // margin-bottom: 1000px;
-  align-items: center;
+  background-color: black;
 }
-
-li {
-  display: inline-block;
-}
-.OptimaLogo {
-  margin-right: 10%;
-}
-h1 {
-  margin-top: 200px;
-  margin-bottom: 500px;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-button {
-  background-color: #191919;
-  color: rgb(255, 255, 255);
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #515151;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: rgb(255, 255, 255);
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {
-  background-color: #7b7b7b;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-li:not(:last-child) {
-  margin-right: 50px;
-}
+ol,
 ul {
-  margin-left: 90px;
-  align-items: center;
-  align-items: center;
-}
-header {
-  height: 100%;
+  list-style: none;
   display: flex;
-  align-items: center;
-  padding: 16px 0px;
-  justify-content: space-between;
-  margin: 0;
+  li {
+    margin-right: 50px;
+  }
 }
-.headerList {
+nav {
   display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
-* {
-  font-family: "Karla", sans-serif;
+.optima {
+  height: 40px;
 }
-.OptimaLogo {
-  padding-right: 100px;
+.govno {
+  display: none;
 }
-// adaptation
-
-@media (max-width: 1199px) {
-  .headerList,
-  .langCall {
+.menu-btn {
+  display: none;
+}
+.dropdown-menu-listElement {
+  display: block;
+}
+.optima {
+  position: static;
+}
+// .phoneNumber
+@media (max-width: 1199px) /*and (min-width: 700px) */ {
+  .phoneNumber {
     display: none;
   }
-}
-
-.adaptatedHeader {
-  @media (min-width: 1200px) {
+  .dropdown-menu-listElement {
     display: none;
   }
-  @media (max-width: 1199px) {
+  header {
     display: flex;
+    justify-content: flex-end;
   }
-  @media (max-width: 700px) {
-    display: flex;
-  }
-  @media (max-width: 360px) {
-    display: flex;
-  }
-}
 
-// ipad air
-@media (max-width: 1199px) {
-  .adaptatedHeader {
+  .menu-btn {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    display: block;
+  }
+
+  .menu-btn span {
+    width: 30px;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    transition: all 0.5s;
+  }
+
+  .menu-btn span:nth-of-type(2) {
+    top: calc(50% - 5px);
+  }
+
+  .menu-btn span:nth-of-type(3) {
+    top: calc(50% + 5px);
+  }
+  /* Меню, которое будет появляться */
+  .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    justify-content: space-evenly;
-    align-items: center;
+    height: 100%;
+    padding: 15px;
+    background: #2a2a2ab4;
+    transform: translateX(-100%);
+    transition: transform 0.5s;
   }
-  .OptimaLogo{
-    padding: 0;
-    margin: 0;
+
+  .menu.active {
+    transform: translateX(0);
   }
-}
-.butgerBtn{
-  background: #ffffff00;
+
+  .menu li {
+    list-style-type: none;
+  }
+  /* Меняем гамбургер иконку, когда меню открыто */
+  .menu-btn.active span:nth-of-type(1) {
+    display: none;
+  }
+
+  .menu-btn.active span:nth-of-type(2) {
+    top: 50%;
+    transform: translate(-50%, 0%) rotate(45deg);
+  }
+
+  .menu-btn.active span:nth-of-type(3) {
+    top: 50%;
+    transform: translate(-50%, 0%) rotate(-45deg);
+  }
+  .govno {
+    display: block;
+  }
+  .optima {
+    position: absolute;
+    left: 0;
+  }
 }

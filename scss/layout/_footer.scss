@@ -1,0 +1,29 @@
+.optima2 {
+  width: 200px;
+}
+.footer-list-element-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0;
+  //   margin-right: 30%;
+}
+footer {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.optima3 {
+  display: none;
+}
+.columns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0;
+//   margin-left: 30%;
+width: 100%;
+flex-wrap: wrap;
+}

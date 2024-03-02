@@ -1,0 +1,43 @@
+.reg{
+    background-image: url("../images/reg/bg/bgPay.png");
+    padding: 10% 28%;
+}
+.regCard{
+    background: #fff;
+    border-radius: 15px;
+    padding: 40px;
+    width: 700px;
+}
+
+@media (max-width: 1199px) {
+    .reg {
+            background-image: url("../images/reg/bg/bgPay.png");
+            padding: 10% 18%;
+        }
+                .regCard {
+                    background: #fff;
+                    border-radius: 15px;
+                    padding: 40px;
+                    width: 500px;
+                }
+}
+@media (max-width: 700px) {
+    .regCard {
+            background: #fff;
+            border-radius: 15px;
+            padding: 40px;
+            width: 500px;
+        }
+}
+@media (max-width: 500px) {
+    .regCard {
+        background: #fff;
+        border-radius: 15px;
+        padding: 30px;
+        width: 300px;
+    }
+        .reg {
+            background-image: url("../images/reg/bg/bgPay.png");
+            padding: 10% 10%;
+        }
+}

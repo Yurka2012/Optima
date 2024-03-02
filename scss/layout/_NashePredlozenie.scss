@@ -1,0 +1,34 @@
+.NashePredlozenie {
+  text-align: center;
+  // ul{
+  //     padding-left: 5%;
+  //     padding-right: 5%;
+  //     display: flex;
+  //     justify-content: center;
+  // }
+  img {
+    margin-right: 70px;
+  }
+}
+.NashePredlozenieContainer {
+  background-image: url("../images/NashePredlozenieImages/bg/Group\ 130.png");
+  padding-top: 200px;
+  @media (max-width: 1199px) {
+  background-image: url("../../images/NashePredlozenieImages/bg/ipadAir.png");
+  background-repeat: no-repeat;
+  background-position: 100%;
+  }
+}
+.NashePredlozenieHeading{
+    font-size: 80px;
+}
+@media (max-width:500px) {
+    .NashePredlozenieHeading {
+            font-size: 50px;
+        }
+}
+@media (max-width:300px) {
+    .NashePredlozenieHeading {
+        font-size: 30px;
+    }
+}

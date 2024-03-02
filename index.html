@@ -1,51 +1,332 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Hello, world!</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
     <link rel="stylesheet" href="./css/style.css" />
+
+    <title>optima for masha</title>
   </head>
+
   <body>
     <header>
-      <ul class="headerList">
-        <li class="headerListItem OptimaLogo">
-          <img src="./images/logo.png" />
-        </li>
-        <li class="headerListItem">
-          <span>услуги</span>
-        </li>
-        <li class="headerListItem">
-          <span>цены</span>
-        </li>
-        <li class="headerListItem">
-          <span>FAQ</span>
-        </li>
-      </ul>
-      <ul class="langCall">
-        <li>
-          <div class="dropdown">
-            <button class="dropdown-button">Ua ▼</button>
-            <div class="dropdown-content">
-              <a href="#">Ua</a>
-              <a href="#">En</a>
-              <a href="#">Fr</a>
+      <nav>
+        <img src="./images/logo.png" alt="Optima" class="optima" />
+
+        <ul class="burger-menu-elements nav-list menu">
+          <li class="navListItem">Услуги</li>
+          <br class="govno" />
+          <li class="navListItem">Цены</li>
+          <br class="govno" />
+          <li class="navListItem">FAQ</li>
+          <br class="govno" />
+        </ul>
+
+        <div class="burger-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+
+        <ul class="lang-phone-list">
+          <li class="dropdown-menu-listElement">
+            <div class="dropdown">
+              <button
+                class="btn btn-secondary dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                ru
+              </button>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item active" href="#">ru</a></li>
+                <li><a class="dropdown-item" href="#">ua</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">en</a>
+                </li>
+              </ul>
             </div>
-          </div>
-        </li>
-        <li>
-          <img src="./images/header/icon.png" /> <a href="callto:+48800003111">+48800003111</a>
-        </li>
-      </ul>
-      <ul class="adaptatedHeader">
-        <li class="adatedLogo"><img src="./images/logo.png" alt="OptimaPartner"></li>
-        <li class="Phone">
-           <a href="callto:+48800003111"><img src="./images/header/icon.png" alt=""></a>
-           <butto class="butgerBtn"><img src="./images/adaptation/butger.png" alt=""></butto>
           </li>
-      </ul>
-      <!-- <h1>Мы - лучший выбор для вас</h1> -->
+          <li class="phone-number">
+            <a href="callto:+48800003111">
+              <img src="./images/header/icon.png" alt="" />
+            </a>
+            <a href="callto:+48800003111" class="phoneNumber"
+              >+48 800 003 111</a
+            >
+          </li>
+        </ul>
+        <div class="menu-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
     </header>
+    <main class="main">
+      <section class="hero">
+        <h1>Мы - <span class="orange">лучший выбор</span> для вас</h1>
+      </section>
+      <section class="NashePredlozenie">
+        <div class="NashePredlozenieContainer">
+          <h2 class="NashePredlozenieHeading">Наше предложение</h2>
+
+          <marquee class="NashePredlozenieListImg">
+            <img src="./images/NashePredlozenieImages/Card1.png" alt="" />
+            <img src="./images/NashePredlozenieImages/Card1.png" alt="" />
+            <img src="./images/NashePredlozenieImages/Card1.png" alt="" />
+            <img src="./images/NashePredlozenieImages/Card1.png" alt="" />
+          </marquee>
+        </div>
+      </section>
+      <section class="aboutUs">
+        <img
+          class="none"
+          src="./images/aboutUs/bg/iphone100promaxultraxdaltcntrldeltedeluxeluxeedition.png"
+          alt=""
+        />
+        <div class="aboutUsContainer">
+          <h2>О нас</h2>
+          <p>
+            Мы – команда экспертов, посвященная высокому качеству и инновациям.
+            Наши ценности – внимание к каждому клиенту и создание уникальных
+            возможностей для вашего комфорта и успеха. Предлагаем полный спектр
+            решений для мобильности: аренда автомобилей под выкуп, инвестиции в
+            автопарк, автопарк с автосервисом и возможность подключения к такси.
+          </p>
+        </div>
+      </section>
+      <section class="aboutUs2">
+        <div class="priorteti">
+          <ul class="prioList">
+            <li class="ProListItem">
+              <img src="./images/aboutUs/icon-2.png" />
+              <div>
+                <h3>Опыт роботы 5 лет</h3>
+                <p>Уже 5 лет мы обеспечиваем удобство и выгодные условия</p>
+              </div>
+            </li>
+            <li class="ProListItem">
+              <img src="./images/aboutUs/icon-2.png" />
+              <div>
+                <h3>Опыт роботы 5 лет</h3>
+                <p>Уже 5 лет мы обеспечиваем удобство и выгодные условия</p>
+              </div>
+            </li>
+            <li class="ProListItem">
+              <img src="./images/aboutUs/icon-2.png" />
+              <div>
+                <h3>Опыт роботы 5 лет</h3>
+                <p>Уже 5 лет мы обеспечиваем удобство и выгодные условия</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="whyUs">
+        <h2>Почему выберают нас?</h2>
+        <div class="whyUsContainer">
+          <!-- <h2>01</h2> -->
+          <ul class="whyUsList">
+            <li class="WhyUsListItem">
+              <img src="./images/whyUs/nums/num1.png" />
+              <h3>Блольшой выбор автомобилей</h3>
+              <p>
+                Нашим клиентам доступен широкий ассортимент автомобилей,
+                отвечающих разным требованиям
+              </p>
+            </li>
+
+            <li class="WhyUsListItem">
+              <img src="./images/whyUs/nums/02.png" />
+              <h3>Опыт и профессионализм</h3>
+              <p>
+                С нашим опытом и профессиональной командой, ваша надежность и
+                удовлетворенность – наш приоритет
+              </p>
+            </li>
+
+            <li class="WhyUsListItem">
+              <img src="./images/whyUs/nums/03.png" />
+              <h3>Качество по доступной цене</h3>
+              <p>
+                Наша цель – высокое качество по доступным ценам, чтобы каждый
+                мог воспользоваться лучшими условиями
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="reg">
+        <div class="regCard">
+          <h3>Получите доступ к нашим услугам прямо сейчас!</h3>
+          <p>
+            Наш менеджер перезвонит Вам в кратчайшие сроки или звоните нам
+            <span class="orange">+48 800 003 111</span>
+          </p>
+          <div class="3btns">
+            <input type="text" placeholder="name" />
+            <input type="text" placeholder="+48 (XXX) XX-XX-XX" />
+            <button type="button" class="btn btn-warning">
+              Оставить заявку
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="feedback">
+        <h2>Наши отзывы</h2>
+
+        <ul class="feedbackList">
+          <li class="feedbackListItem">
+            <img src="./images/feedback/stars/5.png" alt="" />
+            <p>
+              Стать водителем такси Optima Partner было прибыльным и полноценным
+              опытом. Поддержка со стороны Optima Partner была превосходной, они
+              предоставили мне инструменты и рес...
+            </p>
+            <img src="./images/feedback/users/1.png" alt="" />
+          </li>
+          <li class="feedbackListItem">
+            <img src="./images/feedback/stars/4.png" alt="" />
+            <p>
+              Стать водителем такси Optima Partner было прибыльным и полноценным
+              опытом. Поддержка со стороны Optima Partner была превосходной, они
+              предоставили мне инструменты.
+            </p>
+            <img src="./images/feedback/users/2.png" alt="" />
+          </li>
+          <li class="feedbackListItem">
+            <img src="./images/feedback/stars/5.png" alt="" />
+            <p>
+              Стать водителем такси Optima Partner было прибыльным и полноценным
+              опытом. Поддержка со стороны Optima Partner была превосходной, они
+              предоставили мне инструменты и рес...
+            </p>
+            <img src="./images/feedback/users/2.png" alt="" />
+          </li>
+        </ul>
+      </section>
+      <section class="questions">
+        <div class="qContainer">
+          <h2>Часто задаваемые вопросы</h2>
+          <h5>В каких городах работает Optima Partner?</h5>
+          <h6>
+            Optima Partner сегодня работает на территории трех польских городов:
+            Познань, Вроцлав и Варшава. Наш офис находится в городе Познань по
+            адресу: Sycowska 23, Poznan. Мы не останавливаемся на достигнутом, и
+            наша география регулярно расширяется, поэтому следите за нашим
+            присутствием в вашем городе через социальные сети Instagram,
+            Telegram и Facebook.
+          </h6>
+          <h5>
+            Что такое топливная карта и как она работает?
+            <span class="open">+</span>
+          </h5>
+          <h5>
+            Что такое топливная карта и как она работает?
+            <span class="open">+</span>
+          </h5>
+          <h5>
+            Что такое топливная карта и как она работает?
+            <span class="open">+</span>
+          </h5>
+          <h5>
+            Что такое топливная карта и как она работает?
+            <span class="open">+</span>
+          </h5>
+          <button type="button" class="btn btn-warning">Показать все</button>
+          <!-- <button> + </button> -->
+        </div>
+        <!-- <span class="open">+</span> -->
+      </section>
+      <section class="line">
+        <ul class="lineList">
+          <li class="lineListItem del">
+            <h3>10 000 - 12 000 zl</h3>
+            <p>средняя зарплата водителя</p>
+          </li>
+          <li class="lineListItem">
+            <h3>90</h3>
+            <p>авто в управлении</p>
+          </li>
+          <li class="lineListItem">
+            <h3>1875+</h3>
+            <p>подключенных водителей</p>
+          </li>
+          <li class="lineListItem del">
+            <h3>300+</h3>
+            <p>собственный автопарк</p>
+          </li>
+        </ul>
+      </section>
+      <section class="geo">
+        <h2 class="geoh">
+          Наша география все <br />
+          время расширяется
+        </h2>
+        <p class="geop">
+          Филиалы в 3 городах Польши:<br />
+          <span class="orange"> Познань, Варшава, Вроцлав</span><br />
+          (работаем, включая пригород)
+        </p>
+        <p class="geop">
+          Присоединяйтесь, приезжайте в наши филиалы,<br />
+          СТО и точки партнеров, получайте стабильный <br />заработок на
+          субаренде или по франшизе
+        </p>
+      </section>
+    </main>
+    <footer>
+                <img class="optima3" src="./images/footer/logo/optima.png" alt="" />
+      <ul class="columns">
+        <li class="columnItem">
+          <img class="optima2" src="./images/footer/logo/optima.png" alt="" />
+        </li>
+        <li class="columnItem">
+          <ul class="footer-list-element-list">
+            <li class="footer-list-element-list-item">
+              <h4>Меню</h4>
+            </li>
+            <li class="footer-list-element-list-item">Услуги</li>
+            <li class="footer-list-element-list-item">Цены</li>
+            <li class="footer-list-element-list-item">FAQ</li>
+          </ul>
+        </li>
+        <li class="columnItem">
+          <ul class="footer-list-element-list">
+            <li class="footer-list-element-list-item">
+              <h4>Контакты</h4>
+            </li>
+            <li class="footer-list-element-list-item">+48 800 003 111</li>
+            <li class="footer-list-element-list-item">biuro@optimapartner.com</li>
+            <li class="footer-list-element-list-item">Sycowska 23, 60-003, Poznań</li>
+          </ul>
+        </li>
+                <li class="columnItem">
+          <ul class="footer-list-element-list">
+            <li class="footer-list-element-list-item">
+              <h4>Follow us</h4>
+            </li>
+            <li class="footer-list-element-list-item"><img src="./images/footer/logo/social.png" alt=""></li>
+          </ul>
+        </li>
+      </ul>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
   </body>
 </html>

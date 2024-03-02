@@ -1,0 +1,61 @@
+.aboutUs p,
+.aboutUs span {
+  color: rgb(0, 0, 0);
+  font-size: x-large;
+}
+.aboutUsContainer {
+  background-color: #fff;
+  border-radius: 15px;
+  width: 50%;
+}
+.aboutUs {
+  background: url("../images/aboutUs/bg/mac.png");
+  height: 600px;
+  background-repeat: no-repeat;
+  padding-top: 4rem;
+}
+.ProListItem {
+  display: flex;
+}
+.ProListItem img {
+  width: 100px;
+  height: 100px;
+}
+.none {
+  display: none;
+}
+@media (max-width: 700px) {
+  .aboutUs p,
+  .aboutUs span {
+    color: rgb(0, 0, 0);
+    font-size: large;
+  }
+  .none {
+    display: block;
+  }
+  .aboutUs2 {
+    display: none;
+  }
+  .aboutUs {
+    background-color: #fff;
+  }
+  .aboutUsContainer {
+    background-color: #fff;
+    border-radius: 15px;
+    width: 100%;
+    font-size: 1rem;
+
+  }
+  .none{
+    width: 100%;
+  }
+  .aboutUsContainer p{
+    font-size: 20px;
+    background-color: #fff;
+  }
+}
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+}
