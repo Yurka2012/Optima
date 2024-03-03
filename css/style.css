@@ -121,6 +121,11 @@ nav {
     left: 0;
   }
 }
+header {
+  align-items: center;
+  padding-top: 10px;
+}
+
 .orange {
   color: orange;
 }
@@ -140,20 +145,20 @@ h1 {
 
 @media (max-width: 1199px) {
   .hero {
-    background-image: url("../../images/hero/bg/carstablet.png");
+    background-image: url("../images/hero/bg/carstablet.png");
     height: 700px;
     background-size: 100%;
     text-align: center;
-    padding-top: 5%;
+    padding-top: 30%;
   }
 }
 @media (max-width: 400px) {
   .hero {
-    background-image: url("../../images/hero/bg/carstablet.png");
+    background-image: url("../images/hero/bg/carstablet.png");
     height: 500px;
     background-size: 100%;
     text-align: center;
-    padding-top: 5%;
+    padding-top: 15%;
   }
 }
 .NashePredlozenie {
