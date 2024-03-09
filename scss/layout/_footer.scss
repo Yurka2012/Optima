@@ -27,10 +27,15 @@ footer {
 width: 100%;
 flex-wrap: wrap;
 }
-
-.I{
-  display: flex;
-  flex-direction: row-reverse;
-  padding: 10%;
-  margin-left: 15%;
+    .I {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+@media (max-width: 500px) {
+  .I {
+      display: flex;
+      flex-direction: row-reverse;
+      padding: 10%;
+      margin-left: 15%;
+    }
 }

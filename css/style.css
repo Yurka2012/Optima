@@ -486,6 +486,13 @@ footer {
 .I {
   display: flex;
   flex-direction: row-reverse;
-  padding: 10%;
-  margin-left: 15%;
+}
+
+@media (max-width: 500px) {
+  .I {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 10%;
+    margin-left: 15%;
+  }
 }
