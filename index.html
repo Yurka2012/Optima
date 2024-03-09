@@ -22,12 +22,12 @@
         <img src="./images/logo.png" alt="Optima" class="optima" />
 
         <ul class="burger-menu-elements nav-list menu">
-          <li class="navListItem">Услуги</li>
-          <br class="govno" />
-          <li class="navListItem">Цены</li>
-          <br class="govno" />
-          <li class="navListItem">FAQ</li>
-          <br class="govno" />
+          <li class="navListItem">
+            Услуги
+            <br class="govno" />
+          </li>
+          <li class="navListItem">Цены <br class="govno" /></li>
+          <li class="navListItem">FAQ <br class="govno" /></li>
         </ul>
 
         <div class="burger-menu">
@@ -76,17 +76,20 @@
       <section class="hero">
         <h1>Мы - <span class="orange">лучший выбор</span> для вас</h1>
       </section>
-      <section class="NashePredlozenie">
-        <div class="NashePredlozenieContainer">
+      <section class="NashePredlozenie NashePredlozenieContainer">
+        <!-- <div class="NashePredlozenieContainer"> -->
           <h2 class="NashePredlozenieHeading">Наше предложение</h2>
-
-          <marquee class="NashePredlozenieListImg">
+          <marquee
+            class="NashePredlozenieListImg"
+            scrollamount="25"
+            truespeed="60"
+          >
             <img src="./images/NashePredlozenieImages/Card1.png" alt="" />
-            <img src="./images/NashePredlozenieImages/Card1.png" alt="" />
-            <img src="./images/NashePredlozenieImages/Card1.png" alt="" />
-            <img src="./images/NashePredlozenieImages/Card1.png" alt="" />
+            <img src="./images/NashePredlozenieImages/Card2.png" alt="" />
+            <img src="./images/NashePredlozenieImages/Card3.png" alt="" />
+            <img src="./images/NashePredlozenieImages/Card4.png" alt="" />
           </marquee>
-        </div>
+        <!-- </div> -->
       </section>
       <section class="aboutUs">
         <img
@@ -269,29 +272,31 @@
         </ul>
       </section>
       <section class="geo">
-        <h2 class="geoh">
-          Наша география все <br />
-          время расширяется
-        </h2>
-        <p class="geop">
-          Филиалы в 3 городах Польши:<br />
-          <span class="orange"> Познань, Варшава, Вроцлав</span><br />
-          (работаем, включая пригород)
-        </p>
-        <p class="geop">
-          Присоединяйтесь, приезжайте в наши филиалы,<br />
-          СТО и точки партнеров, получайте стабильный <br />заработок на
-          субаренде или по франшизе
-        </p>
+        <div class="geon">
+          <h2 class="geoh">
+            Наша география все <br />
+            время расширяется
+          </h2>
+          <p class="geop">
+            Филиалы в 3 городах Польши:<br />
+            <span class="orange"> Познань, Варшава, Вроцлав</span><br />
+            (работаем, включая пригород)
+          </p>
+          <p class="geop">
+            Присоединяйтесь, приезжайте в наши филиалы,<br />
+            СТО и точки партнеров, получайте стабильный <br />заработок на
+            субаренде или по франшизе
+          </p>
+        </div>
       </section>
     </main>
     <footer>
-                <img class="optima3" src="./images/footer/logo/optima.png" alt="" />
+      <img class="optima3" src="./images/footer/logo/optima.png" alt="" />
       <ul class="columns">
         <li class="columnItem">
           <img class="optima2" src="./images/footer/logo/optima.png" alt="" />
         </li>
-        <li class="columnItem">
+        <li class="columnItem I">
           <ul class="footer-list-element-list">
             <li class="footer-list-element-list-item">
               <h4>Меню</h4>
@@ -300,23 +305,28 @@
             <li class="footer-list-element-list-item">Цены</li>
             <li class="footer-list-element-list-item">FAQ</li>
           </ul>
-        </li>
-        <li class="columnItem">
+
           <ul class="footer-list-element-list">
             <li class="footer-list-element-list-item">
               <h4>Контакты</h4>
             </li>
             <li class="footer-list-element-list-item">+48 800 003 111</li>
-            <li class="footer-list-element-list-item">biuro@optimapartner.com</li>
-            <li class="footer-list-element-list-item">Sycowska 23, 60-003, Poznań</li>
+            <li class="footer-list-element-list-item">
+              biuro@optimapartner.com
+            </li>
+            <li class="footer-list-element-list-item">
+              Sycowska 23, 60-003, Poznań
+            </li>
           </ul>
         </li>
-                <li class="columnItem">
+        <li class="columnItem">
           <ul class="footer-list-element-list">
             <li class="footer-list-element-list-item">
               <h4>Follow us</h4>
             </li>
-            <li class="footer-list-element-list-item"><img src="./images/footer/logo/social.png" alt=""></li>
+            <li class="footer-list-element-list-item">
+              <img src="./images/footer/logo/social.png" alt="" />
+            </li>
           </ul>
         </li>
       </ul>

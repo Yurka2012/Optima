@@ -9,24 +9,29 @@
   .geop {
     font-size: 10px;
   }
-  .geo{
-  padding-left: 10px;
+  .geo {
+    padding-left: 10px;
   }
-  .geoh{
+  .geoh {
     font-size: 15px;
   }
-  .geo{
+  .geo {
     padding: 0;
   }
 }
-@media (max-width: 360px) {
-    .geo {
-            background: url("../images/geo/bg/bg.png");
-            // text-align: center;
-            background-position: 100%;
-            background-size: 85%;
+@media (max-width: 500px) {
+  * {
+    box-sizing: border-box;
+  }
+  .geo {
+    background: url("../images/geo/bg/bg_Blured.jpg");
+    // text-align: center;
+    // filter: blur(8px);
+    // -webkit-filter: blur(8px);
+    background-position: 100%;
+    background-size: 75%;
 
-            background-repeat: no-repeat;
-            padding-left: 0px;
-        }
+    background-repeat: no-repeat;
+    padding-left: 0px;
+  }
 }

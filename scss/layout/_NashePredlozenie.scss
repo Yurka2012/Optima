@@ -22,10 +22,14 @@
 .NashePredlozenieHeading{
     font-size: 80px;
 }
+// marquee{
+//   scrollamount: 0;
+// }
 @media (max-width:500px) {
     .NashePredlozenieHeading {
             font-size: 50px;
         }
+        
 }
 @media (max-width:300px) {
     .NashePredlozenieHeading {

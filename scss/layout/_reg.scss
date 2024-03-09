@@ -31,13 +31,18 @@
 }
 @media (max-width: 500px) {
     .regCard {
+        // position: ;
         background: #fff;
         border-radius: 15px;
-        padding: 30px;
-        width: 300px;
+        // margin:10%;
+        // width: 300px;
+        width: 100%;
+            // margin: 5% 5% 5% 10%;
+        
     }
         .reg {
+            // position: absolute;
             background-image: url("../images/reg/bg/bgPay.png");
-            padding: 10% 10%;
+            padding: 7% 7% 7% 7%;
         }
 }

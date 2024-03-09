@@ -296,6 +296,8 @@ header {
   }
   .whyUsList {
     flex-direction: column;
+    margin-left: 0;
+    padding: 0;
   }
   .WhyUsListItem {
     background: #ffaa43;
@@ -338,12 +340,11 @@ header {
   .regCard {
     background: #fff;
     border-radius: 15px;
-    padding: 30px;
-    width: 300px;
+    width: 100%;
   }
   .reg {
     background-image: url("../images/reg/bg/bgPay.png");
-    padding: 10% 10%;
+    padding: 7% 7% 7% 7%;
   }
 }
 .feedbackListItem {
@@ -388,6 +389,11 @@ h5 {
   .questions {
     background: white;
     background-size: 100%;
+    width: 100%;
+  }
+  .qContainer {
+    width: 100%;
+    margin: 0;
   }
   .open {
     margin-left: 20px;
@@ -433,11 +439,14 @@ h5 {
     padding: 0;
   }
 }
-@media (max-width: 360px) {
+@media (max-width: 500px) {
+  * {
+    box-sizing: border-box;
+  }
   .geo {
-    background: url("../images/geo/bg/bg.png");
+    background: url("../images/geo/bg/bg_Blured.jpg");
     background-position: 100%;
-    background-size: 85%;
+    background-size: 75%;
     background-repeat: no-repeat;
     padding-left: 0px;
   }
@@ -472,4 +481,11 @@ footer {
   padding: 0;
   width: 100%;
   flex-wrap: wrap;
+}
+
+.I {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 10%;
+  margin-left: 15%;
 }

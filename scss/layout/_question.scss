@@ -22,8 +22,16 @@ h5 {
   .questions {
     background: white;
     background-size: 100%;
+  width: 100%;
+  }
+  .qContainer {
+    width: 100%;
+    margin: 0;
+
   }
   .open {
     margin-left: 20px;
   }
 }
+
+  // width: 100%;
